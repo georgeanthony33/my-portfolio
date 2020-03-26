@@ -1,0 +1,644 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000727;
+  color: white;
+  font-family: 'Oxanium', cursive;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  color: #000727;
+  height: calc(100vh - 70px);
+}
+
+:root {
+  --visibility: visible;
+}
+
+.title {
+  top: 25%;
+  left: 55%;
+  width: fit-content;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  visibility: var(--visibility);
+}
+
+.title > h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 35px;
+}
+
+.subtitle > h2 {
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+.cursor {
+  transform: translateY(-2px) translateX(-1px);
+  height: 32px;
+  width: 20px;
+  background-color: #000727;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  76% {
+    opacity: 1;
+  }
+}
+
+.mountains {
+  background-image: url("../assets/Mountains.png");
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  word-spacing: 1px;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 0px;
+  position: sticky;
+  background-color: #000727;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-bottom: solid rgba(150, 192, 255, 0.342) 1px;
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 3vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li > a:hover {
+  color: rgb(150, 192, 255);
+}
+
+.main1 {
+  padding: 0 15vw;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+section {
+  z-index: 1;
+}
+
+h3 {
+  font-size: 60px;
+  margin: 0 0 20px 0;
+  color: rgb(150, 192, 255);
+}
+
+p {
+  font-size: 20px;
+}
+
+.about {
+  max-width: 630px;
+  /* width: 65%; */
+  margin: -50px auto 0;
+}
+
+hr {
+  margin: 10px auto 30px;
+  height: 1px;
+  width: 80%;
+  background-color: rgb(150, 192, 255);
+  border: none;
+}
+
+.about > p {
+  margin-top: 40px;
+}
+
+.skills {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.icons-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icons-container > div {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px;
+}
+
+i {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 48px;
+  margin: 0;
+}
+
+img.roots {
+  width: 100vw;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.main2 {
+  margin-top: 22px;
+  padding: 0 70px;
+  text-align: center;
+  background-color: rgb(150, 192, 255);
+  color: #000727;
+  transform: translateY(-55px);
+  z-index: 0;
+}
+
+.projects > * {
+  color: #000727;
+}
+
+.projects > hr {
+  margin: 10px auto 0px;
+  height: 1px;
+  width: 52%;
+  border: none;
+  background-color: #000727;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 50px;
+  /* align-items: center; */
+  margin-top: 100px;
+}
+
+div.laptop {
+  max-width: 600px;
+}
+
+.project:nth-child(odd) > .laptop {
+  padding-right: 50px;
+  margin-left: 20px;
+}
+
+.project:nth-child(even) > .laptop {
+  padding-left: 50px;
+  margin-right: 20px;
+}
+
+img.project {
+  position: absolute;
+  top: 148px;
+  left: 116px;
+  height: 263px;
+  width: 438px;
+  z-index: 1;
+}
+
+img.project-img {
+  max-width: 600px;
+  width: 100%;
+}
+
+svg {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+
+div.project-description {
+  width: 41%;
+  text-align: left;
+}
+
+.project:nth-child(even) > .project-description {
+  text-align: right;
+}
+
+.project:nth-child(even) > .project-description > .technologies {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h5 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+br {
+  font-size: 10px;
+}
+
+.technologies {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies > div {
+  width: 35px;
+  padding: 2px;
+}
+
+.technologies > div > i {
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  margin: 0 7px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background-color: rgb(150, 192, 255);
+  color: #000727;
+  border: #000727 solid 2px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #000727;
+  color: rgb(150, 192, 255);
+  cursor: pointer;
+}
+
+.button > i {
+  font-size: 1.4vw;
+  margin-right: 10px;
+}
+
+.button > i.devicon-heroku-plain {
+  font-size: 1.3vw;
+}
+
+.button:nth-child(5) > i {
+  transform: translateY(-10px);
+}
+
+#pacman {
+  transform: scale(1.3);
+}
+
+.projects {
+  padding-bottom: 40px;
+}
+
+img.rocks {
+  width: 100vw;
+  transform: translateY(-110px);
+}
+
+.main3 {
+  margin-top: -80px;
+  padding: 0 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-image: linear-gradient(#000727, #00041f);
+  color: rgb(150, 192, 255);
+  transform: translateY(-55px);
+}
+
+.main3 > hr {
+  margin: 10px auto 0px;
+  height: 1px;
+  width: 52%;
+  border: none;
+  background-color: rgb(150, 192, 255);
+}
+
+div.experience {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 50px auto 0;
+}
+
+img.experience {
+  width: 30%;
+  height: 30%;
+  min-width: 200px;
+}
+
+div.experience-description {
+  width: 70%;
+  margin: 0 30px;
+  text-align: left;
+}
+
+.experience:nth-child(even) > .experience-description {
+  text-align: right;
+}
+
+img#lloyds-right {
+  margin-left: 25px;
+}
+
+img#lloyds-left {
+  margin-right: 25px;
+}
+
+#no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.cavern-top {
+  background-image: url("../assets/CavernTop.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translateY(-82px);
+}
+
+.atlantis {
+  background-image: url("../assets/Atlantis.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cavern-bottom {
+  background-image: url("../assets/CavernBottom.png");
+  height: 100vh;
+  width: 100vw;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translateY(-420px);
+}
+
+.optional-hr {
+  display: none;
+}
+
+.main4 {
+  padding: 80px 15vw 10px 15vw;
+  margin: 50px auto 0;
+  background-image: linear-gradient(#00041f, #000727);
+  color: rgb(150, 192, 255);
+  transform: translateY(-50px);
+}
+
+.main4 > hr {
+  margin: 10px auto 0px;
+  height: 1px;
+  width: 59.5%;
+  border: none;
+  background-color: rgb(150, 192, 255);
+}
+
+img.me {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+  height: 20px;
+}
+
+.contact-links > i {
+  transform: translateY(-2px);
+  font-size: 1.7vw;
+  margin-right: 10px;
+}
+
+#tablet-show {
+  display: none;
+}
+#tablet-hide {
+  display: block;
+}
+
+.experience-title > img.experience {
+  display: none;
+}
+
+@media only screen and (max-width: 1175px) {
+  div.project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cavern-top, .atlantis, .cavern-bottom {
+    display: none;
+  }
+  #tablet-show {
+    display: block;
+  }
+  #tablet-hide {
+    display: none;
+  }
+  .main4 {
+    padding: 80px 5vw 10px 5vw;
+    margin: 50px auto 0;
+  }
+  #interests {
+    margin: -10px auto 0;
+  }
+  div.laptop {
+    max-width: 600px;
+    width: 90vw;
+  }
+  div.project-description {
+    max-width: 600px;
+    width: 90vw;
+    text-align: center;
+  }
+  .project:nth-child(even) > .project-description {
+    text-align: center;
+  }
+  .project:nth-child(even) > .laptop, .project:nth-child(odd) > .laptop {
+    padding: 0;
+  }
+  .project:nth-child(7) {
+    margin-top: 70px;
+  }
+  .project-description > h4 {
+    margin-top: 20px;
+  }
+  .project:nth-child(even) > .project-description > .technologies, .project:nth-child(odd) > .project-description > .technologies {
+    display: flex;
+    justify-content: center;
+  }
+  .main3 > .experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .main3 > .experience > div.experience-description{
+    width: 90%;
+    text-align: center;
+  }
+  .main3 > .experience > img.experience {
+    display: none;
+  }
+  .experience-title > img.experience {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .experience-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .skills {
+    width: 80%;
+    margin-top: 40px;
+  }
+  div.icons-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  i {
+    font-size: 30px;
+  }
+  img.experience {
+    display: none;
+  }
+  div.experience {
+    justify-content: center;
+  }
+  .main4 > .experience > .experience-description {
+    text-align: center;
+    margin: 0;
+    width: 80%;
+  }
+  .main3 {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    font-size: 20px;
+  }
+  .main1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .skills {
+    width: 100%;
+  }
+  .icons-container > div {
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  nav {
+    font-size: 20px;
+    height: 130px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .main3 {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .icons-container > div > p {
+    font-size: 18px;
+  }
+  .main1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main3 {
+    padding: 0 20px;
+  }
+  .main4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .icons-container > div {
+    /* padding: 5px; */
+    width: 120px;
+  }
+  .main3 {
+    padding: 0 10px;
+  }
+  .main4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .technologies > div {
+    width: 30px;
+    /* padding: 1px; */
+  }
+}
