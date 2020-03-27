@@ -48,6 +48,28 @@ h2 {
   font-size: 40px;
 }
 
+.fa-angle-double-down {
+  color: #000727;
+}
+
+/* .fa-angle-double-down:hover {
+  color: #051661;
+} */
+
+.fa-angle-double-down:active {
+  animation: disappear 2s 1;
+  /* animation-iteration-count: 1; */
+}
+
+@keyframes disappear {
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .cursor {
   transform: translateY(-2px) translateX(-1px);
   height: 32px;
