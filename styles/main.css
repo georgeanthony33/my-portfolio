@@ -86,6 +86,56 @@ body {
   text-align: center;
 }
 
+
+
+/* Style the navigation menu */
+.mobile-nav {
+  display: none;
+  overflow: hidden;
+  background-color: #000727;
+  position: relative;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobile-nav #hiddenLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobile-nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.mobile-nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #000727
+}
+
+/* Add a grey background color on mouse-over */
+.mobile-nav a:hover {
+  background-color: rgb(246, 246, 246);
+  color: #000727;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #000727;
+  color: white;
+  /* height: 50px; */
+}
+
 nav {
   position: absolute;
   z-index: 1;
@@ -127,6 +177,8 @@ li > a:hover {
   padding: 0 15vw;
   text-align: center;
   padding-bottom: 30px;
+  background-color: #000727;
+  z-index: -1;
 }
 
 section {
@@ -321,10 +373,6 @@ br {
   transform: translateY(-10px);
 }
 
-#pacman {
-  transform: scale(1.3);
-}
-
 .projects {
   padding-bottom: 40px;
 }
@@ -473,6 +521,10 @@ img.me {
   display: none;
 }
 
+.fa-home {
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 1039px) {
   div.project {
     flex-direction: column;
@@ -544,6 +596,12 @@ img.me {
   }
 }
 
+@media only screen and (max-width: 1039px) {
+  nav {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (max-width: 840px) {
   .skills {
     width: 80%;
@@ -572,6 +630,9 @@ img.me {
   .main3 {
     padding: 0 40px;
   }
+  li {
+    margin: 0 2vw;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -587,6 +648,21 @@ img.me {
   }
   .icons-container > div {
     padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mobile-nav {
+    display: block;
+  }
+  .big-nav {
+    display: none;
+  }
+  header {
+    height: 100vh
+  }
+  img.roots {
+    transform: translateY(-20px);
   }
 }
 
@@ -606,13 +682,6 @@ img.me {
 }
 
 @media only screen and (max-width: 605px) {
-  nav {
-    font-size: 20px;
-    height: 130px;
-  }
-  ul {
-    flex-direction: column;
-  }
   .main3 {
     padding: 0 30px;
   }

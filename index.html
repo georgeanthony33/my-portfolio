@@ -6,11 +6,12 @@
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/devicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/128f95333d.js" crossorigin="anonymous"></script>
   <script src="scripts/app.js"></script>
   <title>George Anthony | Developer</title>
 </head>
-<header>
+<header id="home">
   <div class="mountains"></div>
   <div class="title">
     <h1>George Anthony</h1>
@@ -18,8 +19,9 @@
   </div>
 </header>
 <body>
-  <nav>
+  <nav class="big-nav">
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -27,6 +29,21 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+
+  <div class="mobile-nav">
+    <a href="#home" class="active"><i class="fas fa-home"></i></a>
+    <div id="hiddenLinks">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
   <main class="main1">
     <section class="about" id="about">
       <br />
