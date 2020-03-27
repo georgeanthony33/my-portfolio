@@ -192,7 +192,7 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .about {
@@ -248,7 +248,7 @@ img.roots {
 
 .main2 {
   margin-top: 22px;
-  padding: 0 70px;
+  padding: 0 80px;
   text-align: center;
   background-color: rgb(150, 192, 255);
   color: #000727;
@@ -270,12 +270,14 @@ img.roots {
 
 .project {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 50px;
   margin-top: 100px;
 }
 
 div.laptop {
-  max-width: 600px;
+  width: 50%;
+  max-width: 500px;
 }
 
 .project:nth-child(odd) > .laptop {
@@ -303,7 +305,7 @@ img.project-img {
 }
 
 div.project-description {
-  width: 41%;
+  width: 50%;
   text-align: left;
 }
 
@@ -351,7 +353,7 @@ br {
   background-color: rgb(150, 192, 255);
   color: #000727;
   border: #000727 solid 2px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .button:hover {
@@ -384,7 +386,7 @@ img.rocks {
 
 .main3 {
   margin-top: -80px;
-  padding: 0 80px;
+  padding: 0 90px;
   padding-bottom: 50px;
   text-align: center;
   background-image: linear-gradient(#000727, #00041f);
