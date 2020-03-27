@@ -22,7 +22,7 @@ header {
 }
 
 .title {
-  top: 25%;
+  top: 24%;
   left: 55%;
   width: fit-content;
   transform: translate(-50%, -50%);
@@ -76,7 +76,7 @@ h2 {
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -741,5 +741,8 @@ img.me {
   }
   .technologies > div {
     width: 30px;
+  }
+  .title {
+    top: 21%;
   }
 }
