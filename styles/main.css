@@ -116,6 +116,7 @@ body {
   overflow: hidden;
   background-color: #000727;
   position: relative;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -163,6 +164,7 @@ nav {
   z-index: 1;
   color: white;
   top: 0px;
+  position: -webkit-sticky;
   position: sticky;
   background-color: #000727;
   font-size: 24px;
