@@ -218,7 +218,7 @@ section {
 
 h3 {
   font-size: 60px;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
   color: rgb(150, 192, 255);
 }
 
@@ -234,7 +234,8 @@ p {
 hr {
   margin: 10px auto 30px;
   height: 1px;
-  width: 80%;
+  width: 450px;
+  max-width: 100%;
   background-color: rgb(150, 192, 255);
   border: none;
 }
@@ -293,7 +294,6 @@ img.roots {
 .projects > hr {
   margin: 10px auto 0px;
   height: 1px;
-  width: 52%;
   border: none;
   background-color: #000727;
 }
@@ -424,7 +424,6 @@ img.rocks {
 .main3 > hr {
   margin: 10px auto 0px;
   height: 1px;
-  width: 52%;
   border: none;
   background-color: rgb(150, 192, 255);
 }
@@ -517,7 +516,6 @@ img#lloyds-left {
 .main4 > hr {
   margin: 10px auto 0px;
   height: 1px;
-  width: 59.5%;
   border: none;
   background-color: rgb(150, 192, 255);
 }

@@ -4,13 +4,13 @@ function init() {
   
   function logPosition() {
     if (window.innerWidth > 641) {
-      if (window.scrollY > 520) {
+      if (window.scrollY > 490) {
         document.documentElement.style.setProperty('--visibility', 'hidden')
       } else {
         document.documentElement.style.setProperty('--visibility', 'visible')
       }
     } else {
-      if (window.scrollY > 550) {
+      if (window.scrollY > 515) {
         document.documentElement.style.setProperty('--visibility', 'hidden')
       } else {
         document.documentElement.style.setProperty('--visibility', 'visible')
