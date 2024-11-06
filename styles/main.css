@@ -47,6 +47,7 @@ h1 {
 h2 {
   letter-spacing: 3px;
   font-size: 40px;
+  width: fit-content;
 }
 
 .fa-angle-double-down {
@@ -124,6 +125,10 @@ body {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .mobile-nav #hiddenLinks {
   display: none;
+}
+
+a.blue-hover:hover {
+  color: rgb(90, 176, 247);
 }
 
 /* Style navigation menu links */
@@ -441,6 +446,16 @@ img.experience {
   min-width: 200px;
 }
 
+div.kantan-ovo-images-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  min-width: 200px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
 div.experience-description {
   width: 70%;
   text-align: left;
@@ -548,16 +563,27 @@ img.me {
 #tablet-show {
   display: none;
 }
+
 #tablet-hide {
   display: block;
 }
 
-.experience-title > img.experience {
+.experience-title > img.experience,
+.kantan-ovo-images-container > img.experience {
   display: none;
 }
 
 .fa-home {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1156px) {
+  .cursor {
+    display: none;
+  }
+  h2 {
+    width: 500px;
+  }
 }
 
 @media only screen and (max-width: 1039px) {
@@ -625,10 +651,12 @@ img.me {
     width: 100%;
     text-align: center;
   }
-  .main3 > .experience > img.experience {
+  .main3 > .experience > img.experience,
+  .main3 > .experience > .kantan-ovo-images-container {
     display: none;
   }
-  .experience-title > img.experience {
+  .experience-title > img.experience,
+  .kantan-ovo-images-container > img.experience {
     display: block;
     margin-bottom: 20px;
   }
@@ -636,6 +664,10 @@ img.me {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  div.kantan-ovo-images-container {
+    gap: unset;
     align-items: center;
   }
 }
@@ -768,6 +800,12 @@ img.me {
   }
   h4 {
     font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h2 {
+    width: unset;
   }
 }
 
