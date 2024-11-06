@@ -54,13 +54,8 @@ h2 {
   color: #000727;
 }
 
-/* .fa-angle-double-down:hover {
-  color: #051661;
-} */
-
 .fa-angle-double-down:active {
   animation: disappear 2s 1;
-  /* animation-iteration-count: 1; */
 }
 
 @keyframes disappear {
@@ -160,7 +155,6 @@ a.blue-hover:hover {
 .active {
   background-color: #000727;
   color: white;
-  /* height: 50px; */
 }
 
 main {
