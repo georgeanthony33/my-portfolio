@@ -374,13 +374,16 @@ br {
   text-align: center;
   vertical-align: middle;
   width: 210px;
-  margin: 0 8px;
   padding: 10px 0px;
   border-radius: 10px;
   background-color: rgb(150, 192, 255);
   color: #000727;
   border: #000727 solid 2px;
   font-size: 19px;
+}
+
+.button:nth-of-type(2) {
+  margin-left: 8px;
 }
 
 .button:hover {
@@ -431,7 +434,11 @@ div.experience {
   display: flex;
   align-items: center;
   color: white;
-  margin: 50px auto 0;
+  margin: 80px auto 0;
+}
+
+div#interests {
+  margin: 30px auto 0;
 }
 
 img.experience {
@@ -761,8 +768,8 @@ img.me {
 }
 
 @media only screen and (max-width: 504px) {
-  a.button:first-of-type {
-    margin-bottom: 20px;
+  .button:nth-of-type(2) {
+    margin-left: unset;
   }
 
 @media only screen and (max-width: 500px) {
@@ -794,6 +801,12 @@ img.me {
   }
   h4 {
     font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .button:nth-of-type(2) {
+    margin-top: 20px;
   }
 }
 
